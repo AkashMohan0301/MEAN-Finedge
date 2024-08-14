@@ -1,0 +1,44 @@
+<div style="background-color: rgb(224, 229, 232);width: 350px;height: max-content;border-radius: 10px;margin: auto;margin-top: 40px ;padding: 10px;">
+
+<div style="padding: 10px 10px 10px 10px">
+    <h2>Registration</h2>
+    <form action="" [formGroup]="regform" (ngSubmit)="OnSubmit()">
+        <input type="text"  id="" placeholder="First Name" formControlName="first_name" class="form-control" [(ngModel)]="values.First_name">
+        <div class="div2" *ngIf="submit && f.first_name.errors">
+             <div *ngIf="f.first_name.errors['required']">
+                First Name is required 
+             </div>
+            </div>
+
+        <input type="text" name="" id="" placeholder="Last Name" formControlName="last_name" class="form-control" [(ngModel)]="values.Last_name">
+        <div class="div2" *ngIf="submit && f.last_name.errors">
+            <div *ngIf="f.last_name.errors['required']">
+                Last Name is required 
+            </div>
+        </div>
+
+        <input type="email" name="" id="" placeholder="Email" formControlName="email" class="form-control" [(ngModel)]="values.email">
+        <div class="div2" *ngIf="submit && f.email.errors">
+            <div *ngIf="f.email.errors['required']">Email is required</div>
+            <div *ngIf="f.email.errors['email']">Invalid email</div>
+        </div>
+
+        <input type="text" name="" id="" placeholder="Phone" formControlName="phone" class="form-control" [(ngModel)]="values.phone">
+        <div class="div2" *ngIf="submit && f.phone.errors">
+            <div *ngIf="f.phone.errors['required']">Phone Number is required</div>
+            <div *ngIf="f.phone.errors['pattern']">Invalid phone Number</div>
+        </div>
+
+        <input type="password" name="" id=""placeholder="Password" formControlName="passwords" class="form-control" [(ngModel)]="values.password">
+        <div class="div2" *ngIf="submit && f.passwords.errors">
+            <div *ngIf="f.passwords.errors['required']">Password is required</div>
+            <div *ngIf="f.passwords.errors['pattern']">Invalid Password</div>
+        </div>
+
+        <input type="submit" name="" id="" class="btn btn-success">
+    </form>
+ 
+</div>  
+
+
+</div>

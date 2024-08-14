@@ -1,0 +1,18 @@
+<table> 
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+    <tbody *ngFor="let i of peoples;index as y ; let a = even" [class.res]="a">
+        <tr *ngIf="i.Age>30"    >
+            <td>{{ "EMP00" + (y+1) }}</td>
+            <td>{{i.Name}}</td>
+            <td>{{i.Age}}</td>
+            <td>{{i.country}}</td>
+    
+        </tr>
+    </tbody>
+
+</table>

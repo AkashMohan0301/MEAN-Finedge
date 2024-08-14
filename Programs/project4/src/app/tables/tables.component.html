@@ -1,0 +1,18 @@
+<html>
+    <table>
+        <tr>
+            <th>Fruit Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Bill</th>
+        </tr>
+        <tr *ngFor="let i of datas">
+            <td>{{i.Fruit_name}}</td>
+            <td>{{i.Price}}</td>
+            <td>{{i.Qty}}</td>
+            <td>{{i.Price*i.Qty}}</td>
+    
+        </tr>
+    </table>
+
+</html>

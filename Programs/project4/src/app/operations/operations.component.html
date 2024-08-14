@@ -1,0 +1,19 @@
+<div [style]="styles">
+    <div style="text-align: center;" >
+        <input type="number" name="" id="" [style]="instyles" [(ngModel)]="values.v1">
+        <input type="number" name="" id="" [style]="instyles" [(ngModel)]="values.v2">
+    </div><br>
+    <div style="text-align: center;">
+        <button style="background-color: Green;" (click)="addition()">Addition</button>
+        <button style="background-color: Red;" (click)="Substraction()">Substraction</button>
+        <button style="background-color: rgb(0, 75, 128);"(click)="Multiplication()">Multiplication</button>
+        <button style="background-color: rgb(165, 230, 37);" (click)="Division()">Division</button>
+        <button (click)="reset()">Reset </button>
+    </div><br>
+    <div style="text-align: center;">
+        <h2 style="margin: auto;" [style]="pstyle" [hidden]="hide">{{values.result}}</h2>
+    </div>
+</div>
+
+
+try multipile syntax of ngClass

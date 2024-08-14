@@ -1,0 +1,25 @@
+.div2{
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.div1{
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    background-color: rgb(17, 140, 64);
+ font-size: large;
+ text-decoration: none; 
+ border:none;
+ color: white;
+ height: 40px;
+ width: 70px;
+
+}

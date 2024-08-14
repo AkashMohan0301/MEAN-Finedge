@@ -1,0 +1,10 @@
+div{
+    background-color: beige;
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+}

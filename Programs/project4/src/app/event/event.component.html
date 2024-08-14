@@ -1,0 +1,14 @@
+<div>
+    <button (click)="counter()">Count</button>
+    <p>{{count}}</p>
+    <button (click)="counter_down()">count Down</button>
+    <button (click)="reset()">Reset</button>
+    <hr>
+    <!-- directive -->
+    <input type="number" placeholder="Enter number" [(ngModel)]="num"><br>
+    <button (click)="odd_or_even()">Odd or Even</button>
+    <p [style.color]="num%2==0?'Green':'Red'">{{str}}</p>
+    <hr>
+    <button (click)="hide()">Hide</button><button (click)="show()">Show</button><br>
+    <div [style]="divstyle" [hidden]="value"></div>
+  </div>
